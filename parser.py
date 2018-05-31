@@ -106,7 +106,7 @@ class MyParser:
 
 
 	def termA_tail(self):
-		if self.la=='or':
+		if self.la=='or' or self.la=='and':
 			self.operator()
 			self.termA()
 			self.termA_tail()
